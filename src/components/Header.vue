@@ -111,7 +111,7 @@
                 <div class="col-md-6 text-center text-md-start pt-5">
                     <h1 class="display-2 fw-bold">{{ articulo.nombre }}</h1>
                     <p class="mt-5 fs-5 text-white">{{ articulo.descripcion }}</p>
-                    <p class="text-primary fs-1 fw-black">Lps {{ articulo.precio }}</p>
+                    <p class="text-primary fs-1 fw-black">Lps. {{ articulo.precio }}</p>
                     <button 
                         type="button"
                         class="btn fs-4 bg-primary text-white py-2 px-5"
@@ -121,6 +121,6 @@
             </div>
         </div>
     
-        <img class="header-articulo" src="/img/header_articulo.png" alt="imagen header articulo">
+        <img class="header-articulo" src="/img/BalonFutbol.png" alt="imagen header articulo">
     </header>
 </template>

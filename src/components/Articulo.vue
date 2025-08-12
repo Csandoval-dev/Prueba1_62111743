@@ -21,7 +21,7 @@
             <h3 class="text-black fs-4 fw-bold text-uppercase">{{ articulo.nombre }}</h3>
            
             <p>{{ articulo.descripcion }}</p>
-            <p class="fw-black text-primary fs-3">${{ articulo.precio }}</p>
+            <p class="fw-black text-primary fs-3">Lps.{{ articulo.precio }}</p>
             <button 
                 type="button"
                 class="btn btn-dark w-100"

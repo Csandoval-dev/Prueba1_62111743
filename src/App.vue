@@ -21,7 +21,7 @@
 
   onMounted(() => {
     articulos.value = db
-    articulo.value = db[0]
+    articulo.value = db[2]
   })
 
   const agregarCarrito = (articulo) => {

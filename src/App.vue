@@ -19,10 +19,20 @@
     localStorage.setItem('carrito', JSON.stringify(carrito.value))
   }
 
-  onMounted(() => {
-    articulos.value = db
-    articulo.value = db[2]
-  })
+ onMounted(() => {
+  articulos.value = db
+  articulo.value = db[2]
+
+  const carritoGuardado = localStorage.getItem('carrito')
+  if (carritoGuardado) {
+    carrito.value = JSON.parse(carritoGuardado)
+  }
+})
+const vaciarCarrito = () => {
+  carrito.value = []                 
+  localStorage.removeItem('carrito') 
+  alert('Vaciar Carrito')
+}
 
   const agregarCarrito = (articulo) => {
     const existeCarrito = carrito.value.findIndex(producto => 
@@ -58,6 +68,7 @@
      @decrementar-cantidad="decrementarCantidad"
      @incrementar-cantidad="incrementarCantidad"
      @agregar-carrito="agregarCarrito" 
+     @vaciar-carrito="vaciarCarrito"
    />
 
   <main class="container-xl mt-5">

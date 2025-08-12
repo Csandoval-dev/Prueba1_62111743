@@ -754,23 +754,29 @@ button:not(:disabled),
 .header {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/header.jpg");
   /** TODO: Eliminar la sig linea **/
-  background-position: 50%;
+  background-position: 30%;
   background-size: cover;
   position: relative;
 }
-.header .header-guitarra {
-  display: none;
-}
-@media (min-width: 992px) {
-  .header .header-guitarra {
-    display: block;
+.header .header-articulo {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    top: 80%; /* ajusta la altura según necesites */
+    left: 30%; /* mueve la pelota más cerca del texto */
+    transform: translateY(-50%);
+    max-width: 240px; /* tamaño de la pelota */
     animation-duration: 1s;
-    animation-delay: 0s;
     animation-timing-function: ease-in-out;
     animation-name: animarImagen;
     z-index: 10;
-  }
 }
+
+@media (max-width: 768px) {
+    .header .header-articulo {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+    }
+}
+
+
+

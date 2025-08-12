@@ -755,15 +755,18 @@ button:not(:disabled),
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/header.jpg");
   /** TODO: Eliminar la sig linea **/
   background-position: 30%;
-  background-size: cover;
-  position: relative;
+  background-size: relative
+  ;position: relative;
+}
+.header .mt-5 {
+  margin-top: 1.5rem !important;
 }
 .header .header-articulo {
     position: absolute;
-    top: 80%; /* ajusta la altura según necesites */
-    left: 30%; /* mueve la pelota más cerca del texto */
+    top: 80%; 
+    left: 35%; 
     transform: translateY(-50%);
-    max-width: 240px; /* tamaño de la pelota */
+    max-width: 240px; 
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-name: animarImagen;

@@ -781,5 +781,22 @@ button:not(:disabled),
     }
 }
 
+.footer-simple {
+    border-top: 2px solid #e99401;
+}
+
+.footer-text {
+    font-weight: 500 !important;
+    margin: 0 !important;
+}
+
+.footer-text .text-primary {
+    font-weight: 700 !important;
+}
+@media (max-width: 768px) {
+    .footer-text {
+        font-size: 1rem !important;
+    }
+}
 
 
